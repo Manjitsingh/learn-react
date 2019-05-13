@@ -11,7 +11,8 @@ class Addform extends React.Component {
     render() {
         return(
                 <div className="csdf">
-                    <p>{ this.props.text }</p>
+                    asdasd
+                    {/*<p>{ this.props.text }</p>*/}
                 </div>
         )
     }

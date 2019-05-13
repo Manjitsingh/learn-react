@@ -1,12 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Router, Route } from 'react-router'
-import Addform from "./components/Addform";
 
+import './App.css';
+import React from 'react';
+import Addform from "./components/Addform";
+import Editform from "./components/Editform";
 function App() {
   return (
-      <Addform text="Hello World" />
+        <div className="wrapper">
+          {/*<Addform text="Hello World" />*/}
+          {/*<Editform/>*/}
+          App.js file renders
+        </div>
   );
 }
 
