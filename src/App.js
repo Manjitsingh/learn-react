@@ -6,8 +6,6 @@ import Editform from "./components/Editform";
 function App() {
   return (
         <div className="wrapper">
-          {/*<Addform text="Hello World" />*/}
-          {/*<Editform/>*/}
           App.js file renders
         </div>
   );

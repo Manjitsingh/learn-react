@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import App from '../App'
-import Addform from './Addform'
-import Editform from './Editform'
-const routing = (
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import App from "../App";
+import Addform from "./Addform";
+import Editform from "./Editform";
+const Routers = (
     <Router>
         <div>
             <ul>
@@ -23,5 +23,6 @@ const routing = (
             <Route path="/edit-form" component={Editform} />
         </div>
     </Router>
-)
-ReactDOM.render(routing, document.getElementById('root'))
+);
+
+export default Routers;

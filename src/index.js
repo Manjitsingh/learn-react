@@ -1,12 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import App from "./App";
+import Addform from "./components/Addform";
+import Editform from "./components/Editform";
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const Routes = (
+    <Router>
+        <div>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/add-form">Add Form</Link>
+                </li>
+                <li>
+                    <Link to="/edit-form">Edit Form</Link>
+                </li>
+            </ul>
+            <Route exact path="/" component={App} />
+            <Route path="/add-form" component={Addform} />
+            <Route path="/edit-form" component={Editform} />
+        </div>
+    </Router>
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+
+ReactDOM.render(Routes, document.getElementById('root'));
+
 serviceWorker.unregister();
